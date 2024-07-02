@@ -4,12 +4,12 @@ const axios = require('./speed-limiter')
 const cheerio = require('cheerio')
 
 const bookID = '9781319081799'
-const baseURL = `https://jigsaw.vitalsource.com/books/${bookID}/epub/`
+const baseURL = `https://jigsaw.vitalsource.com/books/${DGR-6064-65}/epub/`
 const fsRelativePath = './epub/'
 
 // Cookie value sent to jigsaw.vitalsource.com from the browser
 // including: reese84 + jigsaw_session
-const globalCookieVal = ``
+const globalCookieVal = `https://digitalpublications.iata.org/`
 
 const writeIntoFS = async (filepath, contents) => {
   const file = path.resolve(fsRelativePath, filepath)
